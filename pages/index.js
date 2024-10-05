@@ -35,8 +35,10 @@ const Home = () => {
         <motion.section
         className="relative bg-cover bg-center min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
         style={{
-          backgroundImage: "url('https://i.pinimg.com/236x/59/5b/a3/595ba310f6e1aabb52d0116f0b26a9a4.jpg')",
+          backgroundImage: "url('https://i.pinimg.com/236x/42/30/8f/42308f111c442c09f186143158c71ed1.jpg')",
           objectFit: 'cover',
+          width: '100%',
+          height: '100%'
     
         }} 
         initial={{ opacity: 0, y: -50 }}
