@@ -37,7 +37,7 @@ const teamMembers = [
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map(member => (
               <div key={member.id} className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                <img src={member.image} alt={member.name} className="w-full h-40 object-cover" />
+                <img src={member.image} alt={member.name} className="w-full h-40 object-fit" />
                 <div className="p-4">
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <h4 className="text-gray-600">{member.role}</h4>

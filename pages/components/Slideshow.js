@@ -35,13 +35,13 @@ const Slideshow = () => {
     };
   
     return (
-      <div className="relative w-full h-80 md:h-128 overflow-hidden rounded-lg shadow-lg">
+      <div className="relative w-full h-96 md:h-160 overflow-hidden rounded-lg shadow-lg">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
             className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
           >
-            <img src={slide.image} alt={slide.caption} className="w-full h-full object-cover rounded-lg" />
+            <img src={slide.image} alt={slide.caption} className="w-full h-full object-fit rounded-lg" />
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
               <h2 className="text-white text-xl md:text-3xl font-semibold shadow-md">{slide.caption}</h2>
             </div>

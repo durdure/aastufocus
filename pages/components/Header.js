@@ -9,7 +9,13 @@ const Header = () => {
   };
 
   return (
-    <header className= "flex top-0 mx-auto mt-2 bg-gray-900 text-white shadow-md w-[90%] rounded-lg">
+    <header className= "flex top-0 mx-auto w-[90%] bg-gradient-to-b bg-[#2d2da2] text-white shadow-md rounded-lg z-50 "
+    
+
+    style={{ 
+      background: 'linear-gradient(90deg, rgba(45,45,162,1) 0%, rgba(45,45,162,1) 50%, rgba(45,45,162,0.5) 100%)'
+     }}
+    >
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-2xl font-bold">
           <Link href="/" className="hover:text-orange-500">AASTUFocus</Link>

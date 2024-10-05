@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className=" flex mx-auto bg-gray-900 text-white py-10 w-[98%]">
+    <footer className="flex mx-auto bg-gray-900 text-white py-10 w-full">
       <div className="container mx-auto text-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
@@ -17,12 +17,12 @@ const Footer = () => {
 
           <div>
             <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
-            <ul className="text-gray-400">
-              <li><Link href="/" className="hover:text-orange-500">Home</Link></li>
-              <li><Link href="/about" className="hover:text-orange-500">About Us</Link></li>
-              <li><Link href="/services" className="hover:text-orange-500">Services</Link></li>
-              <li><Link href="/events" className="hover:text-orange-500">Events</Link></li>
-              <li><Link href="/contact" className="hover:text-orange-500">Contact</Link></li>
+            <ul className="text-gray-400 space-y-2">
+              <li><Link href="/" className="hover:text-orange-500 transition duration-300">Home</Link></li>
+              <li><Link href="/about" className="hover:text-orange-500 transition duration-300">About Us</Link></li>
+              <li><Link href="/services" className="hover:text-orange-500 transition duration-300">Services</Link></li>
+              <li><Link href="/events" className="hover:text-orange-500 transition duration-300">Events</Link></li>
+              <li><Link href="/contact" className="hover:text-orange-500 transition duration-300">Contact</Link></li>
             </ul>
           </div>
 
@@ -46,16 +46,16 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook">
             <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
             <img src="/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
             <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300">
+          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
             <img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
           </a>
         </div>
