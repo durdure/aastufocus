@@ -5,6 +5,9 @@ import Slideshow from './components/Slideshow';
 import Team from './components/Team';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
+import Testimonial from './components/Testimonial';
+import Newsletter from './components/Newsletter';
+import OurLeaders from './components/OurLeaders';
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -81,7 +84,14 @@ const Home = () => {
      
      
       
-      
+        <motion.section
+          className="py-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+        <OurLeaders/>
+        </motion.section>
 
         <motion.section
           className="py-10"
@@ -106,6 +116,8 @@ const Home = () => {
             </a>
           </div>
         </motion.section>
+      
+      <Testimonial/>
       
 
       <Footer isDarkMode={isDarkMode} />

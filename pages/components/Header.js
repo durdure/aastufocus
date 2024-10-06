@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className= "flex top-0 mx-auto w-[90%] bg-gradient-to-b bg-[#2d2da2] text-white shadow-md rounded-lg z-50 "
+    <header className= "flex top-0 mx-auto w-full bg-gradient-to-b bg-[#2d2da2] text-white shadow-md rounded-lg z-50 "
     
 
     style={{ 
