@@ -36,13 +36,10 @@ const Home = () => {
          
 
         <motion.section
-        className="relative bg-cover bg-center min-h-screen flex flex-col justify-center items-center text-center overflow-hidden"
+        className="relative bg-cover bg-center min-h-screen flex flex-col justify-center items-center text-center overflow-hidden object-fit"
         style={{
-          backgroundImage: "url('https://i.pinimg.com/236x/42/30/8f/42308f111c442c09f186143158c71ed1.jpg')",
-          objectFit: 'cover',
-          width: '100%',
-          height: '100%'
-    
+          image: "url('https://i.pinimg.com/236x/42/30/8f/42308f111c442c09f186143158c71ed1.jpg')"
+          ,  
         }} 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

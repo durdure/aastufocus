@@ -71,6 +71,9 @@ const Slideshow = () => {
         </div>
       </div>
 
+
+      
+
       <div className="relative w-[35%] h-96 md:h-160 overflow-hidden rounded-lg shadow-lg ml-[10%]">
         {slides.map((slide, index) => (
           <div

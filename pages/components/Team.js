@@ -1,31 +1,59 @@
 const teamMembers = [
     {
       id: 1,
-      name: 'John Doe',
-      role: 'President',
+      name: 'Media Team',
+      role: 'Duresa and Nafsif',
       image: 'https://i.pinimg.com/236x/85/a5/00/85a5006b3eba199cec9ae0efaa356532.jpg', 
-      description: 'John is dedicated to strengthening our community and leading initiatives.'
+      description: 'Anumtuhoo kankeettii maalan siif kennaa!!'
     },
     {
       id: 2,
-      name: 'Jane Smith',
-      role: 'Vice President',
+      name: 'Abnezer Team',
+      role: 'DAwit mangistu and Daniel',
       image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
-      description: 'Jane focuses on outreach and engagement, ensuring everyone feels welcome.'
+      description: 'Foonni ani nyaadhu kan biraa midhaa yoo taee maali yoo nati hafee'
     },
     {
       id: 3,
-      name: 'Alice Johnson',
-      role: 'Secretary',
+      name: 'yididyaa',
+      role: 'Bona and Caala',
       image: 'https://i.pinimg.com/236x/85/a5/00/85a5006b3eba199cec9ae0efaa356532.jpg',
-      description: 'Alice manages communications and keeps our events organized.'
+      description: "Har'a Gahuuf sababni kufsaan siidhaa."
     },
     {
       id: 4,
-      name: 'Bob Brown',
+      name: 'Worship Team',
+      role: 'DArertu and Lasistu',
+      image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
+      description: 'Jaalala Kiristoos irraa maaltu adda nuu basaa'
+    },
+    {
+      id: 4,
+      name: 'Natanan Team',
       role: 'Treasurer',
       image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
-      description: 'Bob handles our finances and ensures our funds are well-managed.'
+      description: 'Jaalala Kiristoos irraa maaltu adda nuu basaa'
+    },
+    {
+      id: 4,
+      name: 'Graduate Class Team',
+      role: 'DAwit mangistuu and martha baley',
+      image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
+      description: 'Jaalala Kiristoos irraa maaltu adda nuu basaa'
+    },
+    {
+      id: 4,
+      name: 'Choir Team',
+      role: 'Daniel and jenenus',
+      image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
+      description: 'Jaalala Kiristoos irraa maaltu adda nuu basaa'
+    },
+    {
+      id: 4,
+      name: 'Worship Team',
+      role: 'Treasurer',
+      image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
+      description: 'Jaalala Kiristoos irraa maaltu adda nuu basaa'
     },
   ];
   
