@@ -12,15 +12,27 @@ const Header = () => {
     <header className="flex top-0 mx-auto w-full bg-gradient-to-b from-[#2d2da2] to-[#1e1e78] text-white shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-3xl font-bold">
-          <Link href="/" className="hover:text-orange-400 transition duration-300">AASTUFocus</Link>
+          <Link href="/" className="hover:text-orange-400 transition duration-300">
+            AASTUFocus
+          </Link>
         </h1>
         <nav className="hidden md:flex space-x-8">
           <ul className="flex space-x-6">
-            <li><Link href="/" className="hover:text-orange-400 transition duration-300">Home</Link></li>
-            <li><Link href="/about" className="hover:text-orange-400 transition duration-300">About Us</Link></li>
-            <li><Link href="/services" className="hover:text-orange-400 transition duration-300">Services</Link></li>
-            <li><Link href="/events" className="hover:text-orange-400 transition duration-300">Events</Link></li>
-            <li><Link href="/contact" className="hover:text-orange-400 transition duration-300">Contact</Link></li>
+            <li>
+              <Link href="/" className="hover:text-orange-400 transition duration-300">Home</Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-orange-400 transition duration-300">About Us</Link>
+            </li>
+            <li>
+              <Link href="/services" className="hover:text-orange-400 transition duration-300">Services</Link>
+            </li>
+            <li>
+              <Link href="/events" className="hover:text-orange-400 transition duration-300">Events</Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-orange-400 transition duration-300">Contact</Link>
+            </li>
           </ul>
         </nav>
         <button className="md:hidden" onClick={toggleMobileMenu}>
@@ -39,11 +51,21 @@ const Header = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-800">
           <ul className="flex flex-col space-y-4 p-4">
-            <li><Link href="/" className="hover:text-orange-400 transition duration-300">Home</Link></li>
-            <li><Link href="/about" className="hover:text-orange-400 transition duration-300">About Us</Link></li>
-            <li><Link href="/services" className="hover:text-orange-400 transition duration-300">Services</Link></li>
-            <li><Link href="/events" className="hover:text-orange-400 transition duration-300">Events</Link></li>
-            <li><Link href="/contact" className="hover:text-orange-400 transition duration-300">Contact</Link></li>
+            <li>
+              <Link href="/" className="hover:text-orange-400 transition duration-300">Home</Link>
+            </li>
+            <li>
+              <Link href="/about" className="hover:text-orange-400 transition duration-300">About Us</Link>
+            </li>
+            <li>
+              <Link href="/services" className="hover:text-orange-400 transition duration-300">Services</Link>
+            </li>
+            <li>
+              <Link href="/events" className="hover:text-orange-400 transition duration-300">Events</Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-orange-400 transition duration-300">Contact</Link>
+            </li>
           </ul>
         </div>
       )}
