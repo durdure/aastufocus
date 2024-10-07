@@ -15,58 +15,58 @@ const Home = () => {
   };
 
   return (
-    <div className={isDarkMode ? 'bg-[#c1c1d6] text-[#cfb059]' : 'bg-[#121212] text-[#E0E0E0]'}>
+    <div className={isDarkMode ? 'bg-[#1a1a2e] text-[#e0e0e0]' : 'bg-[#f0f4f8] text-gray-800'}>
       <Head>
-        <title>Aastu focus | fellowship</title>
+        <title>Aastu Focus | Fellowship</title>
         <meta name="description" content="AASTUFocus - A Protestant fellowship for AASTU students seeking faith and community." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
-      <button
+      {/* <button
         onClick={toggleDarkMode}
-        className="absolute top-15 right-4 bg-transparent text-2xl transition duration-300"
+        className="absolute top-4 right-4 bg-transparent text-2xl transition duration-300"
         aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
       >
         {isDarkMode ? '🌞' : '🌙'} 
-      </button>
+      </button> */}
 
       <section className="relative min-h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-cover bg-center">
-  <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
-    <video 
-      className="w-auto h-full min-w-full min-h-full max-w-none object-cover" 
-      autoPlay 
-      loop 
-      muted 
-    >
-      <source src="./focusbg.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div className="absolute inset-0 bg-black opacity-10"></div>
-  
-  <div className="relative inset-0 bg-black opacity-50 flex flex-col justify-center items-center rounded-2xl p-6 md:p-12">
-    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 z-10">Welcome to AASTUFocus</h1>
-    <p className="text-lg md:text-xl text-white mb-6 z-10">A Protestant fellowship for AASTU students seeking faith and community.</p>
-    <a href="/contact" className="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded transition duration-300 z-10">
-      Join Us
-    </a>
-  </div>
-</section>
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+          <video 
+            className="w-auto h-full min-w-full min-h-full max-w-none object-cover" 
+            autoPlay 
+            loop 
+            muted 
+          >
+            <source src="./focusbg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+        
+        <div className="relative inset-0 flex flex-col justify-center items-center rounded-2xl p-6 md:p-12 bg-gradient-to-r from-[#2d2da2] to-[#1e3a8a]">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 z-10">Welcome to AASTUFocus</h1>
+          <p className="text-lg md:text-xl text-white mb-6 z-10">A Protestant fellowship for AASTU students seeking faith and community.</p>
+          <a href="/contact" className="bg-orange-500 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded transition duration-300 z-10">
+            Join Us
+          </a>
+        </div>
+      </section>
 
-      <section className="bg-gray-100 py-10">
+      <section className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-6">Our Events</h2>
           <Slideshow />
         </div>
       </section>
 
-      <section className="bg-gray-100 py-10">
+      <section className="bg-gray-100 py-10 rounded-lg shadow-md">
         <div className="container mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-4">Get Involved!</h2>
           <p className="mb-6 text-gray-700">Join us in our upcoming events and activities. Your participation makes a difference!</p>
-          <a href="/events" className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition duration-300">
+          <a href="/events" className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300">
             View Events
           </a>
         </div>
@@ -80,11 +80,11 @@ const Home = () => {
         <Team />
       </section>
 
-      <section className="bg-gray-100 py-10">
+      <section className="bg-gray-100 py-10 rounded-lg shadow-md">
         <div className="container mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold mb-4">Get Involved!</h2>
+          <h2 className="text-3xl font-bold mb-4">Get Involved Again!</h2>
           <p className="mb-6 text-gray-700">Join us in our upcoming events and activities. Your participation makes a difference!</p>
-          <a href="/events" className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition duration-300">
+          <a href="/events" className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300">
             View Events
           </a>
         </div>
@@ -92,7 +92,7 @@ const Home = () => {
 
       <Testimonial />
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
