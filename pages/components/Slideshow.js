@@ -1,70 +1,68 @@
 import { useState } from 'react';
 
-const slides = [
-  {
-    id: 1,
-    image: 'https://i.pinimg.com/236x/e2/02/78/e20278e979682bdabf6127baf95c1ef1.jpg',
-    caption: 'Join us in faith and fellowship!',
-  },
-  {
-    id: 2,
-    image: 'https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg',
-    caption: 'Empowering students through community service.',
-  },
-  {
-    id: 3,
-    image: 'https://i.pinimg.com/236x/85/a5/00/85a5006b3eba199cec9ae0efaa356532.jpg',
-    caption: 'Weekly gatherings for spiritual growth.',
-  },
-];
-
 const Slideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    "/docs/images/carousel/carousel-1.svg",
+    "/docs/images/carousel/carousel-2.svg",
+    "/docs/images/carousel/carousel-3.svg",
+    "/docs/images/carousel/carousel-4.svg",
+    "/docs/images/carousel/carousel-5.svg",
+  ];
 
-  const nextSlide = () => {
+  const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  const prevSlide = () => {
+  const handlePrev = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   return (
-    <div className='flex flex-col items-center p-4'>
-      <div className="relative w-full max-w-md h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+    <div id="controls-carousel" className="relative w-full" data-carousel="static">
+      {/* Carousel wrapper */}
+      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {slides.map((slide, index) => (
           <div
-            key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}
+            key={index}
+            className={`hidden duration-700 ease-in-out ${index === currentSlide ? 'block' : ''}`}
+            data-carousel-item={index === currentSlide ? "active" : undefined}
           >
-            <img src={slide.image} alt={slide.caption} className="w-full h-full object-cover rounded-lg" />
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-              <h2 className="text-white text-lg md:text-2xl font-semibold shadow-md">{slide.caption}</h2>
-            </div>
+            <img
+              src={slide}
+              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt={`Slide ${index + 1}`}
+            />
           </div>
         ))}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white rounded-full p-2 transition duration-300 ease-in-out hover:bg-opacity-100"
-        >
-          &#10094;
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white rounded-full p-2 transition duration-300 ease-in-out hover:bg-opacity-100"
-        >
-          &#10095;
-        </button>
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition duration-300 ${index === currentSlide ? 'bg-orange-500' : 'bg-gray-400'}`}
-            />
-          ))}
-        </div>
       </div>
+
+      {/* Slider controls */}
+      <button
+        type="button"
+        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        onClick={handlePrev}
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
+          </svg>
+          <span className="sr-only">Previous</span>
+        </span>
+      </button>
+
+      <button
+        type="button"
+        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        onClick={handleNext}
+      >
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
+          </svg>
+          <span className="sr-only">Next</span>
+        </span>
+      </button>
     </div>
   );
 };

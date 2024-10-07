@@ -1,57 +1,66 @@
 import React from 'react';
 
-const leaders = [
-  {
-    id: 1,
-    name: "Daniel ----",
-    position: "Main Leader",
-    description: "Alice leads the organization with a vision of inclusivity and community engagement.",
-    image: "https://i.pinimg.com/236x/ba/a6/e4/baa6e42b59f4da17e886fbe0bb7539d1.jpg",
-  },
-  {
-    id: 2,
-    name: "Radiet",
-    position: "Main Leader",
-    description: "Mark supports the president and oversees event planning and execution.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 3,
-    name: "Olana kalbessa",
-    position: "Main Leader and Graphic Designer",
-    description: "Sarah manages communications and ensures smooth operations within the team.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    id: 4,
-    name: "Tamirat",
-    position: "Main Leader",
-    description: "James handles the financial aspects and fundraising efforts of AASTUFocus.",
-    image: "https://via.placeholder.com/150",
-  },
-];
-
 const OurLeaders = () => {
   return (
-    <section className="bg-gray-100 py-10">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Meet Our Leaders</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {leaders.map((leader) => (
-            <div key={leader.id} className="bg-white p-6 rounded-lg shadow-lg">
-              <img 
-                src={leader.image} 
-                alt={leader.name} 
-                className="w-32 h-32 rounded-full mx-auto mb-4 object-fit" 
-              />
-              <h3 className="text-xl font-bold">{leader.name}</h3>
-              <p className="text-gray-600">{leader.position}</p>
-              <p className="mt-2">{leader.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+     
+      <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">  
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Meet Our Team</h2>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
+          <p className="my-4">If you care for your time, I hands down would go with this.</p>
+        </blockquote>
+        <figcaption className="flex items-center justify-center">
+          <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
+          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+            <div>Bonnie Green</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">Developer at Open AI</div>
+          </div>
+        </figcaption>
+      </figure>
+      
+      <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
+          <p className="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!</p>
+        </blockquote>
+        <figcaption className="flex items-center justify-center">
+          <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
+          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+            <div>Roberta Casas</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
+          </div>
+        </figcaption>
+      </figure>
+      
+      <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
+        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
+          <p className="my-4">Aesthetically, the well-designed components are beautiful and will undoubtedly level up your next application.</p>
+        </blockquote>
+        <figcaption className="flex items-center justify-center">
+          <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture" />
+          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+            <div>Jese Leos</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
+          </div>
+        </figcaption>
+      </figure>
+      
+      <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
+        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
+          <p className="my-4">You have many examples that can be used to create a fast prototype for your team.</p>
+        </blockquote>
+        <figcaption className="flex items-center justify-center">
+          <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture" />
+          <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+            <div>Joseph McFall</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
   );
 };
 
