@@ -1,5 +1,9 @@
 import Link from 'next/link';
-
+import { IconButton } from '@mui/material';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   return (
@@ -47,18 +51,18 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-4 mb-4">
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook">
-            <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
-            <img src="/icons/twitter.svg" alt="Twitter" className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
-            <img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
-          </a>
+          <IconButton href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook">
+            <FacebookIcon />
+          </IconButton>
+          <IconButton href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
+            <TwitterIcon />
+          </IconButton>
+          <IconButton href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton href="#" className="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
+            <InstagramIcon />
+          </IconButton>
         </div>
 
         <p className="text-gray-400 text-sm">
