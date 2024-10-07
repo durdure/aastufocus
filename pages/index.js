@@ -18,8 +18,7 @@ const Home = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Create a theme instance
-  const theme = createTheme({
+    const theme = createTheme({
     palette: {
       mode: isDarkMode ? 'dark' : 'light',
     },
@@ -27,7 +26,7 @@ const Home = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className={isDarkMode ? "bg-black text-[#ffff]" : "bg-white text-[#000]"}>
+      <div className={isDarkMode ? "bg-black text-[#3d77e3]" : "bg-white text-[#000]"}>
         <Head>
           <title>Aastu Focus | Fellowship</title>
           <meta name="description" content="AASTUFocus - A Protestant fellowship for AASTU students seeking faith and community." />
@@ -36,8 +35,11 @@ const Home = () => {
 
         <Header />
 
-        {/* Dark/Light Mode Toggle Button */}
-        <div className="flex justify-end p-4">
+      
+        <div className="flex justify-end">
+          <div>
+            heloo
+          </div>
           <IconButton onClick={toggleDarkMode} color="inherit">
             {isDarkMode ? <Brightness7Icon /> : <Brightness4Icon />}
           </IconButton>
