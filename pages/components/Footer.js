@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+
 const Footer = () => {
   return (
     <footer className="flex mx-auto bg-gray-900 text-white py-10 w-full">
@@ -8,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4">About Us</h3>
             <p className="text-gray-400 mb-4">
-              AASTUFocus is a Protestant fellowship dedicated to serving the AASTU community through faith, support, and outreach.
+              AASTU Focus fellowship is a Protestant fellowship dedicated to serving the AASTU community through faith, support, and outreach.
             </p>
             <p className="text-gray-400">
               Join us in our mission to empower students and foster a spirit of fellowship.
@@ -32,7 +33,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 mb-4 md:mb-0 md:mr-2 w-full max-w-xs"
+                className="p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 mb-4 md:mb-0 md:mr-2 w-full max-w-xs ml-[14%]"
                 required
               />
               <button
