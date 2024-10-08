@@ -219,8 +219,11 @@ const Home = () => {
               Sangalee Jiraan
             </span>: The Final Frontier</h1>
               
-              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-              “Ani adeemsa haraa borii keessatti bishaan guutuudhaan doorsifamaa,
+              <p className="m-3 text-left text-gray-500 dark:text-gray-400 first-line:uppercase 
+              first-line:tracking-widest first-letter:text-7xl first-letter:font-bold
+               first-letter:text-gray-900 dark:first-letter:text-gray-100 
+               first-letter:me-3 first-letter:float-start">
+              Ani adeemsa haraa borii keessatti bishaan guutuudhaan doorsifamaa,
                warra saamtuudhaan doorsifamaa, saba kootiin doorsifamaa, warra saba koo hin 
                tainiin doorsifamaa, mandara keessatti doorsifamaa, lafa onaa keessatti doorsifamaa, 
                galaana irratti doorsifamaa, obboloota sobaatiin doorsifamaa tureera.”
