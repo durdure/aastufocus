@@ -288,6 +288,15 @@ const Home = () => {
       </section>
 
 
+      <section className="phttp://localhost:3000y-10 mb-3" style={{ backgroundColor: theme.palette.background.paper }}>
+        <div className="container mx-auto text-center px-4">
+          <h2 className="text-3xl font-bold mb-4" style={{ color: theme.palette.text.primary }}>Get Involved!</h2>
+          <p className="mb-6" style={{ color: theme.palette.text.secondary }}>Join us in our upcoming events and activities. Your participation makes a difference!</p>
+          <a href="/events" className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300">
+            View Events
+          </a>
+        </div>
+      </section>
 
         
     
@@ -300,16 +309,7 @@ const Home = () => {
 
 
 
-      <section className="phttp://localhost:3000y-10" style={{ backgroundColor: theme.palette.background.paper }}>
-        <div className="container mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold mb-4" style={{ color: theme.palette.text.primary }}>Get Involved!</h2>
-          <p className="mb-6" style={{ color: theme.palette.text.secondary }}>Join us in our upcoming events and activities. Your participation makes a difference!</p>
-          <a href="/events" className="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300">
-            View Events
-          </a>
-        </div>
-      </section>
-
+    
       
 
       <section className="py-10">
