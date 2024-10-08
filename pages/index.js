@@ -215,10 +215,20 @@ const Home = () => {
             </div>
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
               <h1 className="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">
-              <markup>Our Leaders</markup>: The Final Frontier</h1>
+              <span className="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">
+              Sangalee Jiraan
+            </span>: The Final Frontier</h1>
+              
               <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                Street art subway tile salvia four dollar toast bitters selfies quinoa yuccie synth meditation iPhone intelligentsia prism tofu. Viral gochujang bitters dreamcatcher.
+              “Ani adeemsa haraa borii keessatti bishaan guutuudhaan doorsifamaa,
+               warra saamtuudhaan doorsifamaa, saba kootiin doorsifamaa, warra saba koo hin 
+               tainiin doorsifamaa, mandara keessatti doorsifamaa, lafa onaa keessatti doorsifamaa, 
+               galaana irratti doorsifamaa, obboloota sobaatiin doorsifamaa tureera.”
+              —  <span className="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-2">
+              2Qor. 11:26
+            </span>
               </p>
+             
             </div>
 
           </div>
