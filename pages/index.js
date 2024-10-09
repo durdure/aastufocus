@@ -8,6 +8,7 @@ import { IconButton } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Represents light mode
 import Brightness7Icon from '@mui/icons-material/Brightness7'; // Represents dark mode
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Home = () => {
 
@@ -85,7 +86,7 @@ const Home = () => {
       <nav className="bg-[#D1D5DB] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
+            <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Aastu Focus</span>
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -240,7 +241,7 @@ const Home = () => {
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img alt="Shooting Stars" className="object-cover object-center h-full w-full" src="/Focusbg.png" />
+                <Image alt="Shooting Stars" className="object-cover object-center h-full w-full" src="/Focusbg.png" />
               </div>
               <h2 className="text-xl font-medium title-font text-white mt-5">Shooting Stars</h2>
               <p className="text-base leading-relaxed mt-2">
@@ -255,7 +256,7 @@ const Home = () => {
             </div>
             <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img alt="The Catalyzer" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
+                <Image alt="The Catalyzer" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504" />
               </div>
               <h2 className="text-xl font-medium title-font text-white mt-5">The Catalyzer</h2>
               <p className="text-base leading-relaxed mt-2">
@@ -270,7 +271,7 @@ const Home = () => {
             </div>
             <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div className="rounded-lg h-64 overflow-hidden">
-                <img alt="The 400 Blows" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
+                <Image alt="The 400 Blows" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505" />
               </div>
               <h2 className="text-xl font-medium title-font text-white mt-5">The 400 Blows</h2>
               <p className="text-base leading-relaxed mt-2">
@@ -314,7 +315,7 @@ const Home = () => {
 
 <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="text-center text-gray-500 dark:text-gray-400">
-            <img alt="The Catalyzer" className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://dummyimage.com/1204x504" />
+            <Image alt="The Catalyzer" className="mx-auto mb-4 w-36 h-36 rounded-full" src="https://dummyimage.com/1204x504" />
             <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <a href="#">Bonnie Green</a>
             </h3>
@@ -353,7 +354,7 @@ const Home = () => {
 
           </div> 
                <div className="text-center text-gray-500 dark:text-gray-400">
-          <img 
+          <Image 
               className="mx-auto mb-4 w-36 h-36 rounded-full" 
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png" 
               alt="Helene Avatar" 
@@ -394,7 +395,7 @@ const Home = () => {
             </ul>
         </div>
           </div> <div class="text-center text-gray-500 dark:text-gray-400">
-          <img 
+          <Image 
               class="mx-auto mb-4 w-36 h-36 rounded-full" 
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" 
               alt="Jese Avatar" 
@@ -467,7 +468,7 @@ const Home = () => {
           </ul>
       </div>
       <div class="text-center text-gray-500 dark:text-gray-400">
-          <img 
+          <Image 
               class="mx-auto mb-4 w-36 h-36 rounded-full" 
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" 
               alt="Joseph Mcfall Avatar" 
@@ -572,7 +573,7 @@ const Home = () => {
         <Team />
       </section>
 
-      <Testimonial />
+      {/* ------------------------------------------------------------------------------ */}
       <Footer />
     </ThemeProvider>
   );
